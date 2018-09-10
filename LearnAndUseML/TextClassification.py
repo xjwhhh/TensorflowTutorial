@@ -74,7 +74,7 @@ model.add(keras.layers.Dense(16, activation=tf.nn.relu))
 # The last layer is densely connected with a single output node. Using the sigmoid activation function, this value is a float between 0 and 1, representing a probability, or confidence level.
 model.add(keras.layers.Dense(1, activation=tf.nn.sigmoid))
 
-model.summary()
+print(model.summary())
 
 # Hidden units
 # 隐藏层，更多的隐藏层可以进行更复杂的学习
